@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Caro & Gil — 25 de octubre, 2026</title>
+<title>Gil & Caro — 25 de octubre, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -12,14 +12,39 @@
 <body>
 
   <!-- ============ HERO ============ -->
-  <header class="hero">
+  <!-- <header class="hero">
     <p class="eyebrow hero__eyebrow">Nuestra boda</p>
-    <h1 class="hero__title">Caro <span class="amp">&amp;</span> Gil</h1>
+    <h1 class="hero__title">Gil <span class="amp">&amp;</span> Caro</h1>
     <div class="hero__rule"></div>
     <p class="hero__date">Nos casamos el <strong>25 de octubre de 2026</strong></p>
 
     <button class="btn" id="calendarBtn" type="button">Guardar la fecha</button>
 
+    <div class="hero__scroll" aria-hidden="true">
+      <span class="hero__scroll-line"></span>
+      <span class="hero__scroll-text">Desliza</span>
+    </div>
+  </header> -->
+
+  <header class="hero">
+ 
+    <!-- Fotos laterales: reemplaza los src con tus imágenes reales -->
+    <div class="hero__img hero__img--left">
+      <img src="foto-derecha.jpeg" alt="Caro y Gil">
+    </div>
+    <div class="hero__img hero__img--right">
+      <img src="foto-izquierda.jpeg" alt="Caro y Gil">
+    </div>
+ 
+    <!-- Contenido central -->
+    <div class="hero__content">
+      <p class="eyebrow hero__eyebrow">Nuestra boda</p>
+      <h1 class="hero__title">Caro <span class="amp">&amp;</span> Gil</h1>
+      <div class="hero__rule"></div>
+      <p class="hero__date">Nos casamos el <strong>25 de octubre de 2026</strong></p>
+      <button class="btn" id="calendarBtn" type="button">Guardar la fecha</button>
+    </div>
+ 
     <div class="hero__scroll" aria-hidden="true">
       <span class="hero__scroll-line"></span>
       <span class="hero__scroll-text">Desliza</span>
@@ -58,32 +83,31 @@
     <div class="container section__inner reveal">
       <p class="eyebrow section__eyebrow">El gran día</p>
       <h2 class="section__heading">Itinerario</h2>
-      <p class="section__lead">* Horarios por confirmar — edítalos abajo en el código.</p>
 
       <div class="timeline">
         <div class="timeline__row">
-          <span class="timeline__time">5:00 pm</span>
+          <span class="timeline__time">4:30 pm</span>
           <div>
             <p class="timeline__name">Ceremonia</p>
             <p class="timeline__desc">Te esperamos puntual para no perdernos el momento.</p>
           </div>
         </div>
         <div class="timeline__row">
+          <span class="timeline__time">5:45 pm</span>
+          <div>
+            <p class="timeline__name">Recepción</p>
+            <p class="timeline__desc">Daremos entrada al salón.</p>
+          </div>
+        </div>
+        <div class="timeline__row">
           <span class="timeline__time">6:00 pm</span>
           <div>
-            <p class="timeline__name">Cóctel de bienvenida</p>
-            <p class="timeline__desc">Bebidas y botana mientras tomamos las fotos.</p>
+            <p class="timeline__name">Comida</p>
+            <p class="timeline__desc">La hora favorita de todos.</p>
           </div>
         </div>
         <div class="timeline__row">
-          <span class="timeline__time">7:30 pm</span>
-          <div>
-            <p class="timeline__name">Recepción y cena</p>
-            <p class="timeline__desc">Brindis, primer baile y a cenar.</p>
-          </div>
-        </div>
-        <div class="timeline__row">
-          <span class="timeline__time">10:00 pm</span>
+          <span class="timeline__time">7:00 pm</span>
           <div>
             <p class="timeline__name">Fiesta</p>
             <p class="timeline__desc">A celebrar hasta que el cuerpo aguante.</p>
@@ -135,33 +159,27 @@
         <span class="palette__swatch" style="background:#7c8a6e;"></span>
         <span class="palette__swatch" style="background:#a3795c;"></span>
       </div>
-      <p class="dresscode__note">Etiqueta rigurosa, no formal de oficina.</p>
+      <p class="dresscode__note">Ocasión semi-formal, no hace falta venir de pingüino.</p>
     </div>
   </section>
 
   <!-- ============ RSVP ============ -->
-  <section class="section" id="confirmar">
+  <!-- <section class="section" id="confirmar">
     <div class="container section__inner reveal">
       <p class="eyebrow section__eyebrow">RSVP</p>
       <h2 class="section__heading">Confirma tu asistencia</h2>
       <p class="section__lead">Antes del 25 de septiembre de 2026, por favor.</p>
 
-      <!--
-        Cuando tengas el link de tu Google Form, reemplaza este bloque por:
-        <div class="rsvp__form-wrap">
-          <iframe src="TU_LINK_DE_GOOGLE_FORM_EMBEBIDO" title="Formulario de confirmación"></iframe>
-        </div>
-      -->
       <div class="rsvp__placeholder">
         Aquí va el formulario de Google Forms.<br>
         Pásame el link de tu formulario (el de "Enviar" → pestaña <code>&lt;&gt;</code> → copiar HTML, o solo la URL) y lo dejo embebido aquí mismo.
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- ============ FOOTER ============ -->
   <footer>
-    <span class="footer__amp">C &amp; G</span>
+    <span class="footer__amp">G &amp; C</span>
     <p class="footer__text">Esta invitación la hicimos nosotros y Claude, jaja 🤍</p>
   </footer>
 
