@@ -12,28 +12,15 @@
 <body>
 
   <!-- ============ HERO ============ -->
-  <!-- <header class="hero">
-    <p class="eyebrow hero__eyebrow">Nuestra boda</p>
-    <h1 class="hero__title">Gil <span class="amp">&amp;</span> Caro</h1>
-    <div class="hero__rule"></div>
-    <p class="hero__date">Nos casamos el <strong>25 de octubre de 2026</strong></p>
-
-    <button class="btn" id="calendarBtn" type="button">Guardar la fecha</button>
-
-    <div class="hero__scroll" aria-hidden="true">
-      <span class="hero__scroll-line"></span>
-      <span class="hero__scroll-text">Desliza</span>
-    </div>
-  </header> -->
-
   <header class="hero">
  
-    <!-- Fotos laterales: reemplaza los src con tus imágenes reales -->
-    <div class="hero__img hero__img--left">
-      <img src="foto-derecha.jpeg" alt="Caro y Gil">
-    </div>
-    <div class="hero__img hero__img--right">
-      <img src="foto-izquierda.jpeg" alt="Caro y Gil">
+    <div class="hero__strip">
+      <div class="hero__img hero__img--left">
+        <img src="foto-derecha.jpeg" alt="Caro y Gil">
+      </div>
+      <div class="hero__img hero__img--right">
+        <img src="foto-izquierda.jpeg" alt="Caro y Gil">
+      </div>
     </div>
  
     <!-- Contenido central -->
@@ -146,36 +133,35 @@
   <section class="section" id="vestimenta">
     <div class="container section__inner reveal">
       <p class="eyebrow section__eyebrow">Código de vestimenta</p>
-      <h2 class="section__heading">Formal</h2>
+      <h2 class="section__heading">Semi-Formal</h2>
       <p class="section__lead">
-        Nos encantaría ver tonos cálidos y neutros. Evita el blanco y el marfil —
-        ese color nos lo dejamos nosotros, jaja.
+        Nos encantaría ver cualquier color. Evita el blanco, dorado y plata.
       </p>
 
       <div class="palette">
-        <span class="palette__swatch" style="background:#2b2722;"></span>
-        <span class="palette__swatch" style="background:#8c8275;"></span>
-        <span class="palette__swatch" style="background:#b9ae9c;"></span>
-        <span class="palette__swatch" style="background:#7c8a6e;"></span>
-        <span class="palette__swatch" style="background:#a3795c;"></span>
+        <span class="palette__swatch" style="background:#ffffff;"></span>
+        <span class="palette__swatch" style="background:#C9A84C;"></span>
+        <span class="palette__swatch" style="background:#BFC1C2 ;"></span>
       </div>
       <p class="dresscode__note">Ocasión semi-formal, no hace falta venir de pingüino.</p>
     </div>
   </section>
 
   <!-- ============ RSVP ============ -->
-  <!-- <section class="section" id="confirmar">
+  <section class="section" id="confirmar">
     <div class="container section__inner reveal">
       <p class="eyebrow section__eyebrow">RSVP</p>
       <h2 class="section__heading">Confirma tu asistencia</h2>
       <p class="section__lead">Antes del 25 de septiembre de 2026, por favor.</p>
-
-      <div class="rsvp__placeholder">
-        Aquí va el formulario de Google Forms.<br>
-        Pásame el link de tu formulario (el de "Enviar" → pestaña <code>&lt;&gt;</code> → copiar HTML, o solo la URL) y lo dejo embebido aquí mismo.
+ 
+      <div class="rsvp__form-wrap">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLScWePrqTblenuGEzB_f0dvqW82cwWGHq0P6KRiSN6s_22AKYQ/viewform?embedded=true"
+          title="Confirma tu asistencia">
+        </iframe>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <!-- ============ FOOTER ============ -->
   <footer>

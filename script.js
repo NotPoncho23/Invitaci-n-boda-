@@ -31,7 +31,6 @@ function updateCountdown(){
 updateCountdown();
 setInterval(updateCountdown, 1000);
 
-// ---------- Add to Google Calendar ----------
 const EVENT_TITLE = 'Boda de Gil y Caro';
 const EVENT_LOCATION = 'Jardín GAIA, Periferico Paseo de la República, 3140, Ex Hacienda de la Huerta - Morelia, Michoacán';
 const EVENT_DETAILS = '¡Nos casamos! Nos encantaría que nos acompañes a celebrar este día tan especial.';
