@@ -55,3 +55,31 @@ document.getElementById('calendarBtn').addEventListener('click', () => {
 // ---------- "Cómo llegar" button ----------
 const VENUE_QUERY = encodeURIComponent('Jardin Gaia, Morelia, Michoacán');
 document.getElementById('mapsBtn').href = `https://www.google.com/maps/search/?api=1&query=${VENUE_QUERY}`;
+
+// ---------- Music toggle ----------
+const musicBtn = document.getElementById('musicBtn');
+const bgMusic  = document.getElementById('bgMusic');
+const iconPlay  = musicBtn.querySelector('.music-btn__icon--play');
+const iconPause = musicBtn.querySelector('.music-btn__icon--pause');
+ 
+// Volumen suave de fondo
+bgMusic.volume = 0.5;
+ 
+musicBtn.addEventListener('click', () => {
+  if (bgMusic.paused) {
+    bgMusic.play().then(() => {
+      musicBtn.classList.add('is-playing');
+      iconPlay.hidden  = true;
+      iconPause.hidden = false;
+      musicBtn.setAttribute('aria-label', 'Pausar música');
+    }).catch(() => {
+      // El navegador bloqueó la reproducción — no pasa nada
+    });
+  } else {
+    bgMusic.pause();
+    musicBtn.classList.remove('is-playing');
+    iconPlay.hidden  = false;
+    iconPause.hidden = true;
+    musicBtn.setAttribute('aria-label', 'Reproducir música');
+  }
+});
